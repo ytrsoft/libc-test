@@ -10,4 +10,8 @@ public interface Libc extends StdCallLibrary {
 
     int GetProcessIds(PointerByReference ids);
 
+    String GetProcessName(int id);
+
+    String GetProcessPath(int id);
+
 }
